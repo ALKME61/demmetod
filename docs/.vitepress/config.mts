@@ -6,6 +6,9 @@ export default defineConfig({
   description: 'Пошаговая документация по созданию приложения учета материалов',
   cleanUrls: true,
   lastUpdated: true,
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
+  ],
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'Мозаика Docs',
