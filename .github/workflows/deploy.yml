@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm run docs:build
 
-      - uses: easingthemes/ssh-deploy@v5
+      - uses: easingthemes/ssh-deploy@v4
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
