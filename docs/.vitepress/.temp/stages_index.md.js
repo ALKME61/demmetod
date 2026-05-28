@@ -1,0 +1,19 @@
+import { ssrRenderAttrs } from "vue/server-renderer";
+import { useSSRContext } from "vue";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const __pageData = JSON.parse('{"title":"Маршрут разработки","description":"","frontmatter":{},"headers":[],"relativePath":"stages/index.md","filePath":"stages/index.md","lastUpdated":1779973680000}');
+const _sfc_main = { name: "stages/index.md" };
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="маршрут-разработки" tabindex="-1">Маршрут разработки <a class="header-anchor" href="#маршрут-разработки" aria-label="Permalink to &quot;Маршрут разработки&quot;">​</a></h1><div class="module-badges"><span class="module-badge">Маршрут ДЭ</span><span class="module-note">Все модули</span></div><div class="info custom-block"><p class="custom-block-title">Отметка по модулю</p><p>Идём по этапам от базы данных до готового программного продукта и финальной сдачи.</p></div><p>Эта документация построена как конвейер. Нельзя пропускать этапы: каждый следующий шаг опирается на результат предыдущего.</p><h2 id="что-студент-получит-в-конце" tabindex="-1">Что студент получит в конце <a class="header-anchor" href="#что-студент-получит-в-конце" aria-label="Permalink to &quot;Что студент получит в конце&quot;">​</a></h2><ul><li>рабочую базу данных MySQL;</li><li>импортированные индивидуальные данные;</li><li>Python-приложение на PyQt6;</li><li>расчёт стоимости минимальной партии;</li><li>расчёт количества продукции по модулю 4;</li><li>формы просмотра, добавления и редактирования материалов;</li><li>окно поставщиков выбранного материала;</li><li>SQL-экспорт базы;</li><li>ER-диаграмму;</li><li>собранный <code>.exe</code>;</li><li>локальный git-репозиторий с итоговым коммитом.</li></ul><h2 id="логика-прохождения" tabindex="-1">Логика прохождения <a class="header-anchor" href="#логика-прохождения" aria-label="Permalink to &quot;Логика прохождения&quot;">​</a></h2><ol><li>Сначала готовится папка проекта и индивидуальные приложения с данными.</li><li>Затем поднимается MySQL и создаётся схема.</li><li>После этого данные импортируются и проверяются SQL-запросами.</li><li>Далее создаётся Python-приложение.</li><li>В конце выполняются проверки, сборка и подготовка итогового комплекта.</li></ol><div class="tip custom-block"><p class="custom-block-title">TIP</p><p>Если у группы разные приложения с данными, документация остаётся общей. Меняются только файлы в папке <code>resources</code> и контрольные значения, которые выдаёт преподаватель.</p></div><h2 id="быстрые-отметки-по-модулям" tabindex="-1">Быстрые отметки по модулям <a class="header-anchor" href="#быстрые-отметки-по-модулям" aria-label="Permalink to &quot;Быстрые отметки по модулям&quot;">​</a></h2><table tabindex="0"><thead><tr><th>Модуль</th><th>Этапы</th><th>Итог</th></tr></thead><tbody><tr><td>Модуль 1</td><td>2–6, 12</td><td>БД, импорт, SQL-скрипт, ER-PDF</td></tr><tr><td>Модуль 2</td><td>7–11</td><td>Приложение, список материалов, расчёт партии</td></tr><tr><td>Модуль 3</td><td>10–11</td><td>Формы добавления/редактирования, переходы, ошибки</td></tr><tr><td>Модуль 4</td><td>9–12</td><td>Поставщики материала и метод расчёта продукции</td></tr><tr><td>Финал</td><td>13–14</td><td>EXE и комплект для сдачи</td></tr></tbody></table><p>Подробная разбивка находится на странице <a href="./modules-map">Карта соответствия модулям ДЭ</a>.</p></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("stages/index.md");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+export {
+  __pageData,
+  index as default
+};
